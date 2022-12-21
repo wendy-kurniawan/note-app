@@ -1,0 +1,13 @@
+.NoteList {
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 2rem;
+    gap: 30px;
+}
+
+@media only screen and (min-width: 56.25em) {
+    .NoteList {
+        padding: 4rem;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}

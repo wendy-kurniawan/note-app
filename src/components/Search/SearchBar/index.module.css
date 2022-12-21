@@ -1,0 +1,34 @@
+.SearchBar {
+    flex: 1 0 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.SearchBar > input {
+    width: 90%;
+    max-width: 100rem;
+    margin-right: -5.75rem;
+    border-radius: 100px;
+    background-color: var(--color-primary-soft);
+    border: none;
+    padding: 2.75rem 3rem;
+    color: inherit;
+    font-size: inherit;
+}
+
+.SearchBar > input::placeholder {
+    color: var(--color-grey);
+    font-weight: 600;
+    font-size: inherit;
+}
+
+.SearchBar > svg {
+    background-color: var(--color-primary-soft);
+}
+
+@media only screen and (min-width: 75em) {
+    .SearchBar {
+        flex: 0 0 40%;
+    }
+}

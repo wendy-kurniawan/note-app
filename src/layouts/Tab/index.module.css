@@ -1,0 +1,22 @@
+.Tab {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 4rem 0;
+}
+
+.TabItem {
+    padding: 0.75rem 1.5rem;
+    font-size: 2rem;
+    text-decoration: none;
+    color: var(--color-text);
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    opacity: 0.5;
+}
+
+.TabItem.Active {
+    opacity: 1;
+    border-bottom: 4px solid var(--color-accent);
+}

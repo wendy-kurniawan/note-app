@@ -1,0 +1,22 @@
+.Container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20rem 0;
+}
+
+.Loading {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    border: 6px solid #f3f3f3;
+    border-top-color: var(--color-accent);
+    display: inline-block;
+    animation: spinning 1s ease-in-out infinite;
+}
+
+@keyframes spinning {
+    100% {
+        transform: rotate(360deg);
+    }
+}

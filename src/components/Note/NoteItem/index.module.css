@@ -1,0 +1,42 @@
+.NoteItem {
+    padding: 4rem 5rem;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Header {
+    flex: 1 1 0;
+}
+
+.Header > .Title {
+    font-size: 2.8rem;
+    margin-bottom: 0.5rem;
+}
+
+.Header > .Date {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.Content {
+    flex: 3 1 0;
+}
+
+.Content > p {
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    display: -webkit-box;
+    word-break: break-all;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.Actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    position: relative;
+    z-index: 1;
+}
